@@ -1,0 +1,110 @@
+/* ==================================================
+   RESPONSIVE.CSS — Breakpoints for mobile / tablet
+   Mobile-first adjustments layered on top of style.css
+   ================================================== */
+
+/* ---------- Large desktop (>1200px) : default styles apply ---------- */
+
+/* ---------- Laptop / small desktop (<= 1024px) ---------- */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--sp-6);
+    padding-top: calc(var(--nav-h) + var(--sp-6));
+  }
+  .hero-content { align-items: center; }
+  .hero-tagline { margin: 0 auto; }
+  .hero-cta { justify-content: center; }
+  .hero-stats { justify-content: center; }
+  .hero-profile { order: -1; }
+
+  .about-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Tablet (<= 768px) ---------- */
+@media (max-width: 768px) {
+  :root {
+    --sp-12: 4rem;
+    --sp-10: 3.5rem;
+    --sp-8: 3rem;
+    --sp-6: 2.5rem;
+  }
+
+  /* Navigation becomes off-canvas */
+  .nav-links {
+    position: fixed;
+    top: var(--nav-h);
+    right: 0;
+    height: calc(100vh - var(--nav-h));
+    width: min(300px, 80vw);
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--sp-1);
+    padding: var(--sp-4) var(--sp-3);
+    background: rgba(5, 8, 22, 0.96);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-left: 1px solid var(--border);
+    transform: translateX(100%);
+    transition: transform var(--t-slow) var(--ease);
+    z-index: 999;
+  }
+  .nav-links.open { transform: translateX(0); }
+  .nav-link { display: block; padding: 14px 18px; font-size: 1.05rem; border-radius: var(--r-md); }
+  .nav-link::after { display: none; }
+  .nav-link:hover, .nav-link.active { background: rgba(37, 99, 235, 0.12); }
+
+  .nav-toggle { display: flex; }
+
+  .section { padding: var(--sp-10) var(--sp-3); }
+
+  .hero-stats { gap: var(--sp-3); }
+  .stat-num { font-size: 1.8rem; }
+
+  .journey-line { display: none; }
+  .journey-step::before { display: none; }
+
+  .testi-card { min-width: 280px; }
+
+  .footer-socials { flex-wrap: wrap; justify-content: center; gap: var(--sp-2); }
+}
+
+/* ---------- Mobile (<= 540px) ---------- */
+@media (max-width: 540px) {
+  .hero-cta { flex-direction: column; width: 100%; }
+  .hero-cta .btn { width: 100%; }
+
+  .hero-stats { gap: var(--sp-2); }
+  .stat-num { font-size: 1.6rem; }
+
+  .skills-grid { grid-template-columns: 1fr; }
+
+  .timeline { padding-left: var(--sp-4); }
+  .timeline-dot { left: calc(-1 * var(--sp-4) + 4px); }
+
+  .gallery-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .gallery-item { aspect-ratio: 1; }
+
+  .proj-grid { grid-template-columns: 1fr; }
+  .proj-card { padding: var(--sp-3); }
+
+  .ach-num { font-size: 2rem; }
+
+  .section-title { font-size: 1.8rem; }
+
+  .back-to-top { right: var(--sp-2); bottom: var(--sp-2); width: 42px; height: 42px; }
+}
+
+/* ---------- Very small phones (<= 360px) ---------- */
+@media (max-width: 360px) {
+  .name-line { font-size: clamp(2.2rem, 12vw, 3rem); }
+  .gallery-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Touch / no-hover devices ---------- */
+@media (hover: none) {
+  .tilt { transform: none !important; }
+  .gallery-item:hover img { transform: none; filter: grayscale(10%) brightness(0.9); }
+}
