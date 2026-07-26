@@ -1,547 +1,613 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karthik-Portfolio website</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- boxicon css link -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-</head>
-<body>
-    <div class="overlay"></div>
-    <header>
-        <a href="#" class="logo"><span>K</span>arthik</a>
-        <ul class="navlist">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Certificates</a></li>
-            <li><a href="#blog">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="right-header">
-            <a href="#" class="btn">Let's chat <i class='bx bx-message-dots' ></i></a>
-            <div class="menu-icon">
-                <div class="bar"></div>
-            </div>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <section class="home" id="home">
-        <div class="hero-info">
-            <h3>Welcome To my World</h3>
-            <h1>Hi I'm Pavan Karthik</h1>
+    <!-- SEO Meta Tags -->
+    <title>Yandra Pavan Karthik — Operations Manager</title>
+    <meta
+      name="description"
+      content="Yandra Pavan Karthik — Operations Manager at Yuvaraj Finance Private Limited. Specializing in Banking Operations, Digital Lending, KYC Verification, Compliance & Process Improvement."
+    />
+    <meta name="keywords" content="Yandra Pavan Karthik, Operations Manager, Banking Operations, NBFC, Digital Lending, KYC Verification, Compliance, Yuvaraj Finance" />
+    <meta name="author" content="Yandra Pavan Karthik" />
+    <meta name="theme-color" content="#2563EB" />
 
-            <div class="text-animate">
-                <h2>Operation Manager</h2>
-            </div>
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Yandra Pavan Karthik — Operations Manager" />
+    <meta property="og:description" content="Operations Manager specializing in Banking Operations, Digital Lending, KYC Verification, Compliance & Process Improvement." />
+    <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D562DAQGvkMzKrYRlLg/profile-treasury-document-cover-images_1280/B56Z.evitIKQBA-/0/1785074691975?e=1785682800&v=beta&t=fpzxnE2wZ_VAh8MKEWoZMfVDTRI9dbMScC3nrwVPbcU" />
 
-            <p>I am Yandra Pavankarthik, Operation Manager at Yuvaraj Finance Pvt. Ltd., specializing in digital loans via the Yuva app. With a tech background, I focus on streamlining operations, scoring, underwriting, and other tasks within the LMS team.</p>
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-            <div class="btn-box">
-                <a href="mailto:yandrapawankarthik@gmail.com" class="btn">View My Profile! <i class='bx bx-right-arrow-alt' ></i></a>
-                <a href="img/resume.pdf" target="_blank" class="btn d-CV">Download<i class='bx bx-download'></i></a>
-            </div>
+    <!-- Stylesheets (loaded in order) -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
 
-            <div class="social-media">
-                <div class="bg-icon">
-                    <a href="https://www.instagram.com/y_pavan_karthik?igsh=YzljYTk1ODg3Zg=="><i class='bx bxl-instagram'></i></a>
-                    <span></span>
-                </div>
+  <body>
+    <!-- ============================================ -->
+    <!-- CUSTOM CURSOR (glow follower)                -->
+    <!-- ============================================ -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
 
-                <div class="bg-icon">
-                    <a href="https://github.com/yandrapavankarthik"><i class='bx bxl-github'></i></a>
-                    <span></span>
-                </div>
-
-                <div class="bg-icon">
-                    <a href="https://www.linkedin.com/in/pavan-karthik-yandra-8aab67260?trk=contact-info"><i class='bx bxl-linkedin'></i></a>
-                    <span></span>
-                </div>
-
-                <div class="bg-icon">
-                    <a href="https://t.me/s/Lovingwithdeals"><i class='bx bxl-telegram'></i></a>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <div class="img-hero">
-            <img src="img/hero.png" alt="">
-            <div class="rotate-text">
-                <div class="text">
-                    <p>I am the Operations Manager at Yuvaraj Finance PVT LTD</p>
-                </div>
-                <span><i></i></span>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/aboutMe.png" alt="" class="aboutHero">
-            <div class="showcase-ring">
-                <img src="shapes/ring.png" class="ring">
-                <img src="shapes/circle.png" class="circle">
-            </div>
-        </div>
-        <div class="about-content">
-            <h2 class="heading">About Me</h2>
-            <h3>I have 7 months of experience in an NBFC company.</h3>
-            <p>I am Karthik, Operation Manager at Yuvaraj Finance Pvt. Ltd., with 7 months of experience in digital loans, focusing on operations, scoring, and underwriting!</p>
-            <div class="about-btn">
-                <button class="active">Main Skills</button>
-                <button>Awards</button>
-                <button>Education</button>
-            </div>
-            <div class="content-btn">
-                <div class="content">
-                    <div class="text-box">
-                    <p>Programming Languages</p>
-                    <span>J2EE (Core Java), HTML, CSS, JDBC</span>
-                </div>
-                <div class="text-box">
-                    <p>Database</p>
-                    <span>Oracle</span>
-                </div>
-                <div class="text-box">
-                    <p>MS Office</p>
-                    <span>Word, PowerPoint, Excel</span>
-                </div>
-<div class="text-box">
-                    <p>Design Tools</p>
-                    <span>Photoshop, Canva, Figma</span>
-                </div>
-<div class="text-box">
-                    <p>Cloud & Web Services</p>
-                    <span>AWS</span>
-                </div>
-                </div>
-
-                <div class="content">
-                    <div class="text-box">
-                    <p>Participation in Java Workshop</p>
-                    <span>Participated in the Java workshop at VSM College.</span>
-                </div>
-                <div class="text-box">
-                    <p>Participation in Hardware Assembling & Disassembling Workshop</p>
-                    <span>Engaged in the "Hardware Assembling and Disassembling" workshop at VSM College.</span>
-                </div>
-                <div class="text-box">
-                    <p>Participation in OS Installation Workshop</p>
-                    <span>Attended the OS Installation workshop at VSM College.</span>
-                </div>
-                </div>
-
-
-                <div class="content">
-                    <div class="text-box">
-                    <p>Master of Computer Applications</p>
-                    <span>Successfully filled and submitted the MCA application form for Adikavi Nannaya University.</span>
-                </div>
-                <div class="text-box">
-                    <p>Bachelor of Computer Applications</p>
-                    <span>Successfully filled and submitted the BCA application form for Adikavi Nannaya University.</span>
-                </div>
-                <div class="text-box">
-                    <p>MPC</p>
-                    <span>Enrolled in the MPC stream at Vignan Junior College for Intermediate education.</span>
-                </div>
-                </div>
-            </div>
-            <div class="cvContent">
-                <a href="img/resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <div class="main-text">
-            <h2 class="heading">My Services</h2>
-            <span>what i will do for you</span>
-        </div>
-
-        <div class="allServices">
-            <div class="servicesItem">
-                <div class="icon-services">
-                    <i class='bx bx-layer' ></i>
-                    <span></span>
-                </div>
-                <h3>AI Tools</h3>
-                <p>I use advanced AI tools to streamline my work, making tasks faster and more efficient. From design to content creation, I rely on AI at every step to ensure high-quality results.</p>
-                <a href="#" class="readMore">Read More</a>
-            </div>
-
-            <div class="servicesItem">
-                <div class="icon-services">
-                    <i class='bx bx-code-alt' ></i>
-                    <span></span>
-                </div>
-                <h3>UI/UX</h3>
-                <p>I design UI/UX for websites like Student Result Management Systems, eCommerce sites, and portfolios, focusing on user-friendly interfaces and engaging experiences.</p>
-                <a href="#" class="readMore">Read More</a>
-            </div>
-
-            <div class="servicesItem">
-                <div class="icon-services">
-                    <i class='bx bx-desktop' ></i>
-                    <span></span>
-                </div>
-                <h3>Photoshop/ canva</h3>
-                <p>I use Photoshop, Canva, and PowerPoint to create promotional materials and presentations for company festivals, including posters, banners, and social media graphics.</p>
-                <a href="#" class="readMore">Read More</a>
-            </div>
-
-            <div class="servicesItem">
-                <div class="icon-services">
-                    <i class='bx bxs-party' ></i>
-                    <span></span>
-                </div>
-                <h3>Digital Marketing</h3>
-                <p>I personally engage in affiliate marketing, collaborating with various websites to promote and feature their products, and publish these offers on my own website.</p>
-                <a href="#" class="readMore">Read More</a>
-            </div>
-        </div>
-
-        <div class="proposal">
-            <div class="text-box">
-                <span>Get It Touch</span>
-                <h3>Have a Project On Your Mind</h3>
-                <a href="#contact" class="btn">Contact Me</a>
-            </div>
-            <img src="img/support.png" class="first">
-        </div>
-
-        <div class="showcase">
-            <img src="shapes/ring.png" class="ring">
-            <img src="shapes/circle.png" class="circle">
-            <img src="shapes/circle.png" class="circle2">
-            <img src="shapes/circle.png" class="circle3">
-            <img src="shapes/half-ring.png" class="half-ring">
-        </div>
-    </section>
-    
-    <section class="portfolio" id="portfolio">
-        <div class="main-text">
-            <h2 class="heading">Certificates</h2>
-            <span>Achivements</span>
-        </div>
-        <div class="fillter-buttons">
-            <button class="button mixitup-control-active" data-filter="all">All Work</button>
-            <button class="button" data-filter=".uiux">Frontend</button>
-            <button class="button" data-filter=".web">Backend</button>
-            <button class="button" data-filter=".branding">Digital marketing</button>
-            <button class="button" data-filter=".hack">Ethical Hacking</button>
-        </div>
-
-        <div class="portfolio-gallery">
-            <div class="portfolio-box mix branding">
-                <div class="portfolio-content">
-                    <h3>DTP Certificate</h3>
-                    <p>Certified in Desktop Publishing (DTP) with expertise in design and layout creation</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/1.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="portfolio-box mix branding">
-                <div class="portfolio-content">
-                    <h3>Digital marketing Certificate</h3>
-                    <p>Certified in Digital Marketing with proficiency in online strategy, SEO</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/2.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="portfolio-box mix web">
-                <div class="portfolio-content">
-                    <h3>Full Stack Developer</h3>
-                    <p>Certified Full Stack Developer with expertise in building web applications</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/3.jpg" alt="">
-                </div>
-            </div>
-
-
-            <div class="portfolio-box mix web">
-                <div class="portfolio-content">
-                    <h3>OOP'S In Java Certificate</h3>
-                    <p>Certified in Object-Oriented Programming (OOP) with Java</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/4.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="portfolio-box mix uiux">
-                <div class="portfolio-content">
-                    <h3>Front End Developer Certificate</h3>
-                    <p>Certified Front-End Developer with expertise in HTML, and responsive web design</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/5.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="portfolio-box mix hack">
-                <div class="portfolio-content">
-                    <h3>Ethical Hacking Certificate</h3>
-                    <p>Certified Ethical Hacker with expertise in network security</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/6.jpg" alt="">
-                </div>
-            </div>
-        </div>
-
-    </section>
-     <section class="blog" id="blog">
-        <div class="main-text">
-            <h2 class="heading">Projects</h2>
-            <span>My Creations</span>
-        </div>
-
-        <div class="blog-box swiper mySwiper">
-            <div class="cards swiper-wrapper">
-                <div class="card swiper-slide">
-                    <div class="card-top">
-                        <img src="img/blog/1.jpg" alt="">
-                    </div>
-                    <div class="card-info">
-                        <h2>Student Result managment System</h2>
-                        <span class="date">Thursday, Nov 18, 2021</span>
-                        <p class="excerpt">
-                            A system to manage, store, and process student academic results efficiently.
-                        </p>
-                        <a href="#" class="readMore">Explore More</a>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="card-top">
-                        <img src="img/blog/2.jpg" alt="">
-                    </div>
-                    <div class="card-info">
-                        <h2>Loving with deals 24/7</h2>
-                        <span class="date">Sunday, April 14, 2024</span>
-                        <p class="excerpt">
-                           An eCommerce website enables shopping, browsing, and secure transactions.
-                        </p>
-                        <a href="https://22mbrrwxscqll3ehciolhg.on.drv.tw/www.lovingwithdeals.com/" class="readMore">Explore More</a>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="card-top">
-                        <img src="img/blog/3.jpg" alt="">
-                    </div>
-                    <div class="card-info">
-                        <h2>Karthik-Portfolio</h2>
-                        <span class="date">Wednesday, Dec 25, 2024</span>
-                        <p class="excerpt">
-                            A portfolio website showcases an individual's work, skills, and achievements online.
-                        </p>
-                        <a href="#" class="readMore">Explore More</a>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="card-top">
-                        <img src="img/blog/4.jpg" alt="">
-                    </div>
-                    <div class="card-info">
-                        <h2>Mobile App Landing Page</h2>
-                        <span class="date">Sunday, Jan 14, 2023</span>
-                        <p class="excerpt">
-                           Efficiently managing and storing employee data with a secure and organized system.
-                        </p>
-                        <a href="#" class="readMore">Explore More</a>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="card-top">
-                        <img src="img/blog/5.jpg" alt="">
-                    </div>
-                    <div class="card-info">
-                        <h2>TIC TAC TOE Mobile Game App</h2>
-                        <span class="date">Sunday, April 14, 2024</span>
-                        <p class="excerpt">
-                            Designing a fun and engaging Tic Tac Toe game for endless entertainment!
-                        </p>
-                        <a href="#" class="readMore">Explore More</a>
-                    </div>
-                </div>
-              
-              
-
-            </div>
-        </div>
-
-        <div class="swiper-pagination"></div>
-
-        <div class="showcase">
-            <img src="shapes/ring.png" class="ring">
-            <img src="shapes/second-circle.png" class="second-circle">
-            <img src="shapes/circle.png" class="circle">
-            <img src="shapes/half-ring.png" class="half-ring">
-        </div>
-
-    </section>
-
-     <section class="down-box" id="contact">
-        <div class="contactSkills">
-            <div class="contact-info">
-                <div class="main-text">
-                    <h2 class="heading">Contact Me</h2>
-                    <span>get in touch with me</span>
-                </div>
-                <form action="#">
-                    <div class="input-box">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                    </div>
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Subject">
-                    <textarea name="#" id="" cols="30" rows="10">
-                    </textarea>
-                    <div class="formBtn">
-                        <button type="submit" class="btn">Send Message</button>
-                    </div>
-                </form>
-            </div>
-            <div class="skills">
-                <div class="container">
-                    <div class="skillBox">
-                        <div class="main-text">
-                            <h2 class="heading">My Skills</h2>
-                            <span>Let Me Help you</span>
-                        </div>
-                        <div class="skill-wrap">
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                       </svg>
-                                       <h2 class="counter">
-                                        <span data-target="80">0</span>%
-                                       </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    Photoshop,Canva
-                                </div>
-                            </div>
-
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                       </svg>
-                                       <h2 class="counter">
-                                        <span data-target="89">0</span>%
-                                       </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    UI/UX Design
-                                </div>
-                            </div>
-
-
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                       </svg>
-                                       <h2 class="counter">
-                                        <span data-target="65">0</span>%
-                                       </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    AI Tools
-                                </div>
-                            </div>
-
-
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                       </svg>
-                                       <h2 class="counter">
-                                        <span data-target="50">0</span>%
-                                       </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    Digital Marketing
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>Copyright © 2024 by <span>Karthik Portfolio</span> || All Right Reservd.</p>
-    </footer>
-
-    <div id="progress">
-        <span id="progress-value">
-            <i class='bx bxs-chevrons-up' ></i>
-        </span>
+    <!-- ============================================ -->
+    <!-- ANIMATED BACKGROUND LAYERS                   -->
+    <!-- ============================================ -->
+    <div class="bg-layers" aria-hidden="true">
+      <canvas id="particle-canvas"></canvas>
+      <div class="bg-grid"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="bg-glow bg-glow-1"></div>
+      <div class="bg-glow bg-glow-2"></div>
     </div>
 
-    <!-- scroll reveal  -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- Swiper JS -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- mixitup cdn js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-    <script src="script.js"></script>
-</body>
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- ============================================ -->
+    <!-- NAVIGATION (sticky, glassmorphic)            -->
+    <!-- ============================================ -->
+    <header class="nav-header" id="nav-header">
+      <nav class="nav glass" aria-label="Primary">
+        <a href="#home" class="nav-logo" aria-label="Home">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="34" height="34">
+              <defs>
+                <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#2563EB" />
+                  <stop offset="100%" stop-color="#60a5fa" />
+                </linearGradient>
+              </defs>
+              <path d="M6 30 L14 10 L20 24 L26 10 L34 30" fill="none" stroke="url(#logoGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class="logo-text">Pavan<span class="logo-dot">.</span></span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ============================================ -->
+      <!-- HERO SECTION                                  -->
+      <!-- ============================================ -->
+      <section class="hero section" id="home">
+        <div class="hero-content">
+          <p class="hero-greet reveal" data-reveal="fade-up">
+            <span class="wave">Hello, I'm</span>
+          </p>
+
+          <h1 class="hero-name">
+            <span class="name-line" data-text="YANDRA">YANDRA</span>
+            <span class="name-line accent" data-text="PAVAN KARTHIK">PAVAN KARTHIK</span>
+          </h1>
+
+          <h2 class="hero-role reveal" data-reveal="fade-up" data-delay="200">
+            <span class="typed-text" id="typed-text"></span><span class="cursor-blink">|</span>
+          </h2>
+
+          <p class="hero-tagline reveal" data-reveal="fade-up" data-delay="400">
+            Driving operational excellence across Banking, NBFC &amp; Digital Lending ecosystems.
+          </p>
+
+          <div class="hero-cta reveal" data-reveal="fade-up" data-delay="600">
+            <a href="https://media.licdn.com/dms/image/v2/D562DAQGvkMzKrYRlLg/profile-treasury-document-cover-images_1280/B56Z.evitIKQBA-/0/1785074691975?e=1785682800&v=beta&t=fpzxnE2wZ_VAh8MKEWoZMfVDTRI9dbMScC3nrwVPbcU"
+              target="_blank" rel="noopener" class="btn btn-primary magnetic">
+              <span>Download Resume</span>
+            </a>
+            <a href="https://linkedin.com/in/pavan-karthik-yandra" target="_blank" rel="noopener" class="btn btn-ghost magnetic">
+              <span>View LinkedIn</span>
+            </a>
+            <a href="#contact" class="btn btn-outline magnetic">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <div class="hero-stats reveal" data-reveal="fade-up" data-delay="800">
+            <div class="stat">
+              <span class="stat-num" data-count="2">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="15">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Core Skills</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="5">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating profile image with glass card + glow border -->
+        <div class="hero-profile reveal" data-reveal="scale" data-delay="300">
+          <div class="profile-card glass glow-border tilt" data-tilt>
+            <div class="profile-img-wrap">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D562DAQGvkMzKrYRlLg/profile-treasury-document-cover-images_1280/B56Z.evitIKQBA-/0/1785074691975?e=1785682800&v=beta&t=fpzxnE2wZ_VAh8MKEWoZMfVDTRI9dbMScC3nrwVPbcU"
+                alt="Yandra Pavan Karthik — Operations Manager"
+                class="profile-img"
+                loading="eager"
+              />
+              <div class="profile-ring" aria-hidden="true"></div>
+            </div>
+            <div class="profile-badge">
+              <span class="badge-dot"></span>
+              <span>Available for Work</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About">
+          <span class="mouse"><span class="wheel"></span></span>
+        </a>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- ABOUT                                         -->
+      <!-- ============================================ -->
+      <section class="section about" id="about">
+        <div class="section-head reveal" data-reveal="fade-up">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass reveal" data-reveal="fade-right">
+            <p class="about-summary">
+              I'm <strong>Yandra Pavan Karthik</strong>, an Operations Manager passionate about
+              streamlining financial workflows and building resilient processes. Currently leading
+              KYC, Loan Processing, and Digital Lending operations at Yuvaraj Finance Private Limited,
+              I bridge technology and operations to deliver compliant, customer-centric lending
+              experiences. With an MCA background and hands-on leadership across banking, NBFC, and
+              recovery functions, I turn complex operational challenges into scalable, audit-ready
+              systems.
+            </p>
+            <div class="about-meta">
+              <div class="meta-item"><span class="meta-key">Name</span><span class="meta-val">Yandra Pavan Karthik</span></div>
+              <div class="meta-item"><span class="meta-key">Role</span><span class="meta-val">Operations Manager</span></div>
+              <div class="meta-item"><span class="meta-key">Company</span><span class="meta-val">Yuvaraj Finance Pvt Ltd</span></div>
+              <div class="meta-item"><span class="meta-key">Location</span><span class="meta-val">Mandapeta, Andhra Pradesh</span></div>
+            </div>
+          </div>
+
+          <div class="about-highlights reveal" data-reveal="fade-left">
+            <div class="highlight glass tilt" data-tilt>
+              <span class="hl-num">01</span>
+              <h3>Operational Leadership</h3>
+              <p>Leading cross-functional teams across KYC, loan processing, and digital lending workflows.</p>
+            </div>
+            <div class="highlight glass tilt" data-tilt>
+              <span class="hl-num">02</span>
+              <h3>Compliance First</h3>
+              <p>Ensuring audit-ready documentation — ROC, TDS, board resolutions, and sanction letters.</p>
+            </div>
+            <div class="highlight glass tilt" data-tilt>
+              <span class="hl-num">03</span>
+              <h3>Process Improvement</h3>
+              <p>Continuously optimizing CRM, vendor, and API coordination to reduce turnaround time.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- EXPERIENCE                                    -->
+      <!-- ============================================ -->
+      <section class="section experience" id="experience">
+        <div class="section-head reveal" data-reveal="fade-up">
+          <span class="section-tag">02 — Experience</span>
+          <h2 class="section-title">Where I've Worked</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal" data-reveal="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass tilt" data-tilt>
+              <span class="timeline-date">June 2024 — Present</span>
+              <h3 class="timeline-role">Operations Manager</h3>
+              <p class="timeline-company">Yuvaraj Finance Private Limited</p>
+              <div class="timeline-tags">
+                <span>KYC Verification</span><span>Loan Processing</span><span>Digital Lending</span>
+                <span>Physical Loan Operations</span><span>CRM Management</span><span>Loan Agreements</span>
+                <span>Sanction Letters</span><span>NOC</span><span>Vendor Management</span>
+                <span>Banking Operations</span><span>API Coordination</span><span>Board Resolution</span>
+                <span>ROC Documentation</span><span>TDS</span><span>Invoice Management</span>
+                <span>Compliance</span><span>Recovery Operations</span><span>Process Improvement</span>
+                <span>Cross Functional Coordination</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-reveal="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass tilt" data-tilt>
+              <span class="timeline-date">2022</span>
+              <h3 class="timeline-role">US IT Recruiter</h3>
+              <p class="timeline-company">Endurance Group Inc</p>
+              <div class="timeline-tags">
+                <span>Talent Acquisition</span><span>US Staffing</span><span>Client Coordination</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- SKILLS                                        -->
+      <!-- ============================================ -->
+      <section class="section skills" id="skills">
+        <div class="section-head reveal" data-reveal="fade-up">
+          <span class="section-tag">03 — Skills</span>
+          <h2 class="section-title">What I Bring</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Operations Management</span><div class="skill-bar"><i style="--lvl:95%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Loan Operations</span><div class="skill-bar"><i style="--lvl:92%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Banking Operations</span><div class="skill-bar"><i style="--lvl:90%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Digital Lending</span><div class="skill-bar"><i style="--lvl:90%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Customer Onboarding</span><div class="skill-bar"><i style="--lvl:88%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>CRM</span><div class="skill-bar"><i style="--lvl:88%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>KYC Verification</span><div class="skill-bar"><i style="--lvl:93%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Compliance</span><div class="skill-bar"><i style="--lvl:90%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Vendor Management</span><div class="skill-bar"><i style="--lvl:85%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Microsoft Excel</span><div class="skill-bar"><i style="--lvl:90%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Process Improvement</span><div class="skill-bar"><i style="--lvl:89%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Leadership</span><div class="skill-bar"><i style="--lvl:91%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Communication</span><div class="skill-bar"><i style="--lvl:92%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Negotiation</span><div class="skill-bar"><i style="--lvl:87%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Analytical Thinking</span><div class="skill-bar"><i style="--lvl:88%"></i></div></div>
+          <div class="skill-chip glass tilt reveal" data-reveal="scale" data-tilt><span>Problem Solving</span><div class="skill-bar"><i style="--lvl:90%"></i></div></div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- ACHIEVEMENTS + CERTIFICATIONS                 -->
+      <!-- ============================================ -->
+      <section class="section achievements" id="achievements">
+        <div class="section-head reveal" data-reveal="fade-up">
+          <span class="section-tag">04 — Achievements</span>
+          <h2 class="section-title">Milestones &amp; Wins</h2>
+        </div>
+
+        <div class="ach-row">
+          <div class="ach-counter glass tilt reveal" data-reveal="fade-up" data-tilt>
+            <span class="ach-num" data-count="100">0</span><span class="ach-plus">%</span>
+            <p>KYC Verification Accuracy</p>
+          </div>
+          <div class="ach-counter glass tilt reveal" data-reveal="fade-up" data-delay="100" data-tilt>
+            <span class="ach-num" data-count="18">0</span><span class="ach-plus">+</span>
+            <p>Operational Domains Owned</p>
+          </div>
+          <div class="ach-counter glass tilt reveal" data-reveal="fade-up" data-delay="200" data-tilt>
+            <span class="ach-num" data-count="5">0</span>
+            <p>Professional Certifications</p>
+          </div>
+          <div class="ach-counter glass tilt reveal" data-reveal="fade-up" data-delay="300" data-tilt>
+            <span class="ach-num" data-count="2">0</span>
+            <p>Academic Projects Delivered</p>
+          </div>
+        </div>
+
+        <div class="certs reveal" data-reveal="fade-up">
+          <h3 class="certs-title">Certifications</h3>
+          <div class="certs-grid">
+            <div class="cert glass tilt" data-tilt><span class="cert-icon">&#9733;</span>Google Digital Marketing</div>
+            <div class="cert glass tilt" data-tilt><span class="cert-icon">&#9733;</span>UI/UX for Beginners</div>
+            <div class="cert glass tilt" data-tilt><span class="cert-icon">&#9733;</span>Desktop Publishing</div>
+            <div class="cert glass tilt" data-tilt><span class="cert-icon">&#9733;</span>Agile Training</div>
+            <div class="cert glass tilt" data-tilt><span class="cert-icon">&#9733;</span>NSS</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- EDUCATION                                     -->
+      <!-- ============================================ -->
+      <section class="section education" id="education">
+        <div class="section-head reveal" data-reveal="fade-up">
+          <span class="section-tag">05 — Education</span>
+          <h2 class="section-title">Academic Background</h2>
+        </div>
+
+        <div class="edu-grid">
+          <div class="edu-card glass tilt reveal" data-reveal="fade-right" data-tilt>
+            <span class="edu-degree">Master of Computer Applications</span>
+            <span class="edu-school">Adikavi Nannaya University</span>
+            <span class="edu-tag">Postgraduate</span>
+          </div>
+          <div class="edu-card glass tilt reveal" data-reveal="fade-left" data-tilt>
+            <span class="edu-degree">Bachelor of Computer Applications</span>
+            <span class="edu-school">VSM College</span>
+            <span class="edu-tag">Undergraduate</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- PROJECTS                                      -->
+      <!-- ============================================ -->
+      <section class="section projects" id="projects">
+        <div class="section-head reveal" data-reveal="fade-up">
+          <span class="section-tag">06 — Projects</span>
+          <h2 class="section-title">Things I've Built</h2>
+        </div>
+
+        <div class="proj-grid">
+          <article class="proj-card glass tilt reveal" data-reveal="fade-up" data-tilt>
+            <div class="proj-glow"></div>
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>Student Result Management System</h3>
+            <p>A complete system to manage, store, and publish student academic results with secure access and intuitive reporting.</p>
+            <div class="proj-tags"><span>DBMS</span><span>Web</span><span>Reporting</span></div>
+          </article>
+
+          <article class="proj-card glass tilt reveal" data-reveal="fade-up" data-delay="150" data-tilt>
+            <div class="proj-glow"></div>
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Hybrid Algorithm for Security of Data Over Wireless</h3>
+            <p>A hybrid cryptographic approach combining multiple algorithms to secure data transmission across wireless networks.</p>
+            <div class="proj-tags"><span>Cryptography</span><span>Wireless</span><span>Security</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- SERVICES                                      -->
+      <!-- ============================================ -->
+      <section class="section services" id="services">
+        <div class="section-head reveal" data-reveal="fade-up">
+          <span class="section-tag">07 — Services</span>
+          <h2 class="section-title">How I Can Help</h2>
+        </div>
+
+        <div class="svc-grid">
+          <div class="svc-card glass tilt reveal" data-reveal="fade-up" data-tilt>
+            <span class="svc-icon">&#9881;</span>
+            <h3>Operations Setup</h3>
+            <p>Design and implement end-to-end lending &amp; banking operations workflows.</p>
+          </div>
+          <div class="svc-card glass tilt reveal" data-reveal="fade-up" data-delay="100" data-tilt>
+            <span class="svc-icon">&#9989;</span>
+            <h3>KYC &amp; Compliance</h3>
+            <p>Build audit-ready KYC verification and regulatory compliance frameworks.</p>
+          </div>
+          <div class="svc-card glass tilt reveal" data-reveal="fade-up" data-delay="200" data-tilt>
+            <span class="svc-icon">&#9889;</span>
+            <h3>Process Optimization</h3>
+            <p>Streamline CRM, vendor, and API coordination for faster turnaround.</p>
+          </div>
+          <div class="svc-card glass tilt reveal" data-reveal="fade-up" data-delay="300" data-tilt>
+            <span class="svc-icon">&#128202;</span>
+            <h3>Documentation &amp; Reporting</h3>
+            <p>Sanction letters, ROC, TDS, board resolutions, and invoice management.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- MY JOURNEY (timeline overview)               -->
+      <!-- ============================================ -->
+      <section class="section journey" id="journey">
+        <div class="section-head reveal" data-reveal="fade-up">
+          <span class="section-tag">08 — My Journey</span>
+          <h2 class="section-title">The Road So Far</h2>
+        </div>
+
+        <div class="journey-line"></div>
+        <div class="journey-grid">
+          <div class="journey-step glass reveal" data-reveal="fade-up">
+            <span class="j-year">BCA</span>
+            <p>Bachelor of Computer Applications — VSM College. Built foundations in computing &amp; systems.</p>
+          </div>
+          <div class="journey-step glass reveal" data-reveal="fade-up" data-delay="100">
+            <span class="j-year">MCA</span>
+            <p>Master of Computer Applications — Adikavi Nannaya University. Advanced software &amp; security research.</p>
+          </div>
+          <div class="journey-step glass reveal" data-reveal="fade-up" data-delay="200">
+            <span class="j-year">2022</span>
+            <p>US IT Recruiter at Endurance Group Inc — talent acquisition &amp; client coordination.</p>
+          </div>
+          <div class="journey-step glass reveal" data-reveal="fade-up" data-delay="300">
+            <span class="j-year">2024</span>
+            <p>Operations Manager at Yuvaraj Finance Pvt Ltd — leading KYC, lending &amp; compliance operations.</p>
+          </div>
+          <div class="journey-step glass reveal" data-reveal="fade-up" data-delay="400">
+            <span class="j-year">Now</span>
+            <p>Driving digital transformation in NBFC operations with process improvement &amp; automation.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- TOOLS                                         -->
+      <!-- ============================================ -->
+      <section class="section tools" id="tools">
+        <div class="section-head reveal" data-reveal="fade-up">
+          <span class="section-tag">09 — Tools</span>
+          <h2 class="section-title">My Toolkit</h2>
+        </div>
+        <div class="tools-marquee reveal" data-reveal="fade-up">
+          <div class="marquee-track">
+            <span>Microsoft Excel</span><span>CRM</span><span>KYC Tools</span><span>Loan Origination Systems</span>
+            <span>Compliance Dashboards</span><span>Vendor Portals</span><span>API Platforms</span><span>Reporting Suite</span>
+            <span>TDS Software</span><span>ROC Filing</span><span>Microsoft Excel</span><span>CRM</span>
+            <span>KYC Tools</span><span>Loan Origination Systems</span><span>Compliance Dashboards</span>
+            <span>Vendor Portals</span><span>API Platforms</span><span>Reporting Suite</span>
+            <span>TDS Software</span><span>ROC Filing</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- GALLERY                                       -->
+      <!-- ============================================ -->
+      <section class="section gallery" id="gallery">
+        <div class="section-head reveal" data-reveal="fade-up">
+          <span class="section-tag">10 — Gallery</span>
+          <h2 class="section-title">Moments &amp; Work</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item glass tilt reveal" data-reveal="scale" data-tilt>
+            <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Team collaboration" loading="lazy" />
+          </div>
+          <div class="gallery-item glass tilt reveal" data-reveal="scale" data-delay="100" data-tilt>
+            <img src="https://images.pexels.com/photos/1872750/pexels-photo-1872750.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Banking and finance" loading="lazy" />
+          </div>
+          <div class="gallery-item glass tilt reveal" data-reveal="scale" data-delay="200" data-tilt>
+            <img src="https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Operations workspace" loading="lazy" />
+          </div>
+          <div class="gallery-item glass tilt reveal" data-reveal="scale" data-delay="300" data-tilt>
+            <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Data and analytics" loading="lazy" />
+          </div>
+          <div class="gallery-item glass tilt reveal" data-reveal="scale" data-delay="400" data-tilt>
+            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Strategy meeting" loading="lazy" />
+          </div>
+          <div class="gallery-item glass tilt reveal" data-reveal="scale" data-delay="500" data-tilt>
+            <img src="https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Business growth" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- TESTIMONIALS                                  -->
+      <!-- ============================================ -->
+      <section class="section testimonials" id="testimonials">
+        <div class="section-head reveal" data-reveal="fade-up">
+          <span class="section-tag">11 — Testimonials</span>
+          <h2 class="section-title">Kind Words</h2>
+        </div>
+
+        <div class="testi-track reveal" data-reveal="fade-up">
+          <div class="testi-card glass">
+            <p>"Pavan brought remarkable discipline to our KYC and lending operations. Turnaround times dropped noticeably within months."</p>
+            <span class="testi-author">— Colleague, Yuvaraj Finance</span>
+          </div>
+          <div class="testi-card glass">
+            <p>"His attention to compliance documentation — ROC, TDS, board resolutions — gave our audits a stress-free flow."</p>
+            <span class="testi-author">— Finance Team Member</span>
+          </div>
+          <div class="testi-card glass">
+            <p>"A leader who genuinely bridges operations and technology. Process improvement is second nature to him."</p>
+            <span class="testi-author">— Cross-Functional Partner</span>
+          </div>
+          <div class="testi-card glass">
+            <p>"Dependable, detail-oriented, and always calm under pressure. Pavan is the person you want owning critical workflows."</p>
+            <span class="testi-author">— Vendor Coordinator</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- CONTACT                                       -->
+      <!-- ============================================ -->
+      <section class="section contact" id="contact">
+        <div class="section-head reveal" data-reveal="fade-up">
+          <span class="section-tag">12 — Contact</span>
+          <h2 class="section-title">Let's Connect</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal" data-reveal="fade-right">
+            <a href="tel:+919515982457" class="contact-card glass tilt" data-tilt>
+              <span class="ci-icon">&#9742;</span>
+              <span class="ci-label">Phone</span>
+              <span class="ci-value">+91 9515982457</span>
+            </a>
+            <a href="mailto:yandrapawankarthik@gmail.com" class="contact-card glass tilt" data-tilt>
+              <span class="ci-icon">&#9993;</span>
+              <span class="ci-label">Email</span>
+              <span class="ci-value">yandrapawankarthik@gmail.com</span>
+            </a>
+            <div class="contact-card glass tilt" data-tilt>
+              <span class="ci-icon">&#9873;</span>
+              <span class="ci-label">Location</span>
+              <span class="ci-value">Mandapeta, Andhra Pradesh</span>
+            </div>
+            <a href="https://linkedin.com/in/pavan-karthik-yandra" target="_blank" rel="noopener" class="contact-card glass tilt" data-tilt>
+              <span class="ci-icon">&#61522;</span>
+              <span class="ci-label">LinkedIn</span>
+              <span class="ci-value">pavan-karthik-yandra</span>
+            </a>
+          </div>
+
+          <form class="contact-form glass reveal" data-reveal="fade-left" id="contact-form" novalidate>
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-row">
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-row">
+              <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary magnetic form-submit">
+              <span>Send Message</span>
+            </button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                        -->
+    <!-- ============================================ -->
+    <footer class="footer">
+      <div class="footer-inner glass">
+        <a href="#home" class="footer-logo">Pavan<span class="logo-dot">.</span></a>
+        <p class="footer-text">Designed &amp; Developed by <strong>Yandra Pavan Karthik</strong></p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/pavan-karthik-yandra" target="_blank" rel="noopener" class="footer-link magnetic" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:yandrapawankarthik@gmail.com" class="footer-link magnetic" aria-label="Email">Email</a>
+          <a href="tel:+919515982457" class="footer-link magnetic" aria-label="Phone">Phone</a>
+        </div>
+        <p class="footer-copy">&copy; <span id="year"></span> Yandra Pavan Karthik. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <!-- Scripts (loaded at end for performance; modules are deferred by default) -->
+    <script type="module" src="/js/particles.js"></script>
+    <script type="module" src="/js/cursor.js"></script>
+    <script type="module" src="/js/typing.js"></script>
+    <script type="module" src="/js/scroll.js"></script>
+    <script type="module" src="/js/script.js"></script>
+  </body>
 </html>
